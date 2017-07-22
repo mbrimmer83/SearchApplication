@@ -19,7 +19,10 @@ const server = new Hapi.Server();
 // Say what port to default to if none given
 server.connection({
   'port': process.env.PORT,
-  'host': '0.0.0.0'
+  'host': '0.0.0.0',
+  'routes': {
+    'cors': true
+  }
 });
 
 // Swagger configuration options
