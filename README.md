@@ -53,3 +53,5 @@ A list of uncompleted items that I was aiming to have completed in the time fram
 3. Units tests for both frontend and backend
 4. Better styling of the application
 5. More accurate search
+6. List indexing
+7. Refactoring of detail components into single component
