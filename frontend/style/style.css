@@ -25,3 +25,7 @@
 .list-group-item:hover {
   background-color: #eee;
 }
+
+.tableStyle {
+  padding:0 15px 0 15px;
+}

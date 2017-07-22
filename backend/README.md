@@ -1,5 +1,0 @@
-## Hapiness
-
-### Get started
-
-`yarn`

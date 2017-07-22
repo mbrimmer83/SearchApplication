@@ -6,10 +6,12 @@ class MovieList extends Component {
     super(props);
     this.showDetails = this.showDetails.bind(this);
   }
-  showDetails() {
-    console.log(`This was clicked!`);
+
+  showDetails(id, movieData) {
+    this.props.clickFunction(movieData)
   }
-  renderMovie(movieData) {
+
+  renderMovie(movieData, handler) {
     if (movieData.check === false) {
       return (
         <tr key={movieData.id}>
@@ -31,7 +33,7 @@ class MovieList extends Component {
           <button
             type="button"
             className="btn-group-xs"
-            onClick={showDetails}>
+            onClick={() => handler(id, movieData)}>
             Details
           </button>
         </td>
@@ -51,7 +53,9 @@ class MovieList extends Component {
           </tr>
         </thead>
         <tbody>
-          {this.props.movie.map(this.renderMovie)}
+          {this.props.movie.map((element) => {
+            return this.renderMovie(element, this.showDetails)
+          })}
         </tbody>
       </table>
     )

@@ -40,5 +40,5 @@ Thumbs.db
 # Node stuff #
 ######################
 node_modules
-#.env
+.env
 /dist
