@@ -33,15 +33,24 @@ export default class App extends Component {
   }
 
   renderAwardDetails() {
-    return this.state.showComponent ? <MovieAwardDetails movie={this.state.movie} show={this.state.showComponent}/> : null
+    if (this.state.movie !== null && this.state.movie.Awards !== undefined) {
+      return this.state.showComponent ? <MovieAwardDetails movie={this.state.movie} show={this.state.showComponent}/> : null;
+    }
+    return;
   }
 
   renderGenreDetails() {
-    return this.state.showComponent ? <MovieGenreDetails movie={this.state.movie} show={this.state.showComponent}/> : null
+    if (this.state.movie !== null && this.state.movie.Genres !== undefined) {
+      return this.state.showComponent ? <MovieGenreDetails movie={this.state.movie} show={this.state.showComponent}/> : null;
+    }
+    return;
   }
 
   renderPeopleDetails() {
-    return this.state.showComponent ? <MoviePeopleDetails movie={this.state.movie} show={this.state.showComponent}/> : null
+    if (this.state.movie !== null && this.state.movie.Participants !== undefined) {
+      return this.state.showComponent ? <MoviePeopleDetails movie={this.state.movie} show={this.state.showComponent}/> : null;
+    }
+    return;
   }
 
   render() {
