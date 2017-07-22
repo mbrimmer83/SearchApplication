@@ -23,7 +23,7 @@ MongoClient.connect(url, (err, db) => {
 module.exports = (req, reply) => {
   find(database, req.query.title)
   .then((docs) => {
-    logger.log('info', 'Response recieved!');
+    logger.log('info', 'Response sent!');
     return reply(docs);
   })
   .catch((err) => {
