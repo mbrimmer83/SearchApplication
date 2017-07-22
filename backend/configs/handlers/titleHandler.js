@@ -6,7 +6,7 @@ const find = require('../dbconfig/findTitles').findTitle;
 
 const MongoClient = require('mongodb').MongoClient;
 
-let url = 'mongodb://readonly:turner@ds043348.mongolab.com:43348/dev-challenge';
+let url = process.env.URL;
 
 let database;
 
