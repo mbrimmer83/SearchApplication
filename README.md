@@ -5,16 +5,16 @@
 ######Install Node Modules
 `npm install`
 
-###### Setup .env variables
+######Setup .env variables
 Create a .env file in the base level of backend directory and place the following content inside:
 `
-LOG_TO_FILE=true
-FILE_LOG_LEVEL=info
+LOG_TO_FILE=true<br>
+FILE_LOG_LEVEL=info<br>
 FILE_LOG_PATH=./logs/main.log
 
 CONSOLE_LOG_LEVEL=info
 
-######Port setting is required
+Port setting is required<br>
 PORT=8282
 
 ###### Connection string is required
