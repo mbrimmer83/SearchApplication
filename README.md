@@ -17,7 +17,7 @@ CONSOLE_LOG_LEVEL=info
 Port setting is required<br>
 PORT=8282
 
-###### Connection string is required
+######Connection string is required
 URL=place entire read only mongodb connection string here.
 `
 
