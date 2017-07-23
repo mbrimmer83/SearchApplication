@@ -1,11 +1,11 @@
 # Getting started
-######Clone this repo.
+Clone this repo.
 `cd backend`
 
-######Install Node Modules
+Install Node Modules
 `npm install`
 
-######Setup .env variables
+Setup .env variables
 Create a .env file in the base level of backend directory and place the following content inside:
 `
 LOG_TO_FILE=true<br>
